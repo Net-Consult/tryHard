@@ -1,195 +1,195 @@
-const hostels = [
-    {
+const hostels = {
+    hotel1: {
         id: 1,
         name: 'hotel rose',
         roomNumbers: 10,
         pool: true,
-        rooms: [
+        rooms:
             {
-                roomName: 'suite de luxe',
-                size: 2,
-                id: 1
-            },
-            {
-                roomName: 'suite nuptiale',
-                size: 2,
-                id: 2
-            },
-            {
-                roomName: 'suite familiale',
-                size: 4,
-                id: 3
-            },
-            {
-                roomName: 'suite budget',
-                size: 2,
-                id: 4
-            },
-            {
-                roomName: 'suite familiale',
-                size: 4,
-                id: 5
-            },
-            {
-                roomName: 'suite budget',
-                size: 3,
-                id: 6
-            },
-            {
-                roomName: 'suite de luxe',
-                size: 2,
-                id: 7
-            },
-            {
-                roomName: 'suite familiale',
-                size: 4,
-                id: 8
-            },
-            {
-                roomName: 'suite de luxe',
-                size: 3,
-                id: 9
-            },
-            {
-                roomName: 'suite présidentielle',
-                size: 5,
-                id: 10
+                room1: {
+                    roomName: 'suite de luxe',
+                    size: 2,
+                    id: 1
+                },
+                room2: {
+                    roomName: 'suite nuptiale',
+                    size: 2,
+                    id: 2
+                },
+                room3: {
+                    roomName: 'suite familiale',
+                    size: 4,
+                    id: 3
+                },
+                room4: {
+                    roomName: 'suite budget',
+                    size: 2,
+                    id: 4
+                },
+                room5: {
+                    roomName: 'suite familiale',
+                    size: 4,
+                    id: 5
+                },
+                room6: {
+                    roomName: 'suite budget',
+                    size: 3,
+                    id: 6
+                },
+                room7: {
+                    roomName: 'suite de luxe',
+                    size: 2,
+                    id: 7
+                },
+                room8: {
+                    roomName: 'suite familiale',
+                    size: 4,
+                    id: 8
+                },
+                room9: {
+                    roomName: 'suite de luxe',
+                    size: 3,
+                    id: 9
+                },
+                room10: {
+                    roomName: 'suite présidentielle',
+                    size: 5,
+                    id: 10
+                }
             }
-        ]
+
 
     },
-    {
+    hotel2: {
         id: 2,
         name: 'hotel ocean',
         roomNumbers: 15,
         pool: false,
-        rooms: [
-            {
+        rooms: {
+            room1: {
                 roomName: 'suite pacifique',
                 size: 2,
                 id: 1
             },
-            {
+            room2: {
                 roomName: 'suite atlantique',
                 size: 2,
                 id: 2
             },
-            {
+            room3: {
                 roomName: 'suite manche',
                 size: 4,
                 id: 3
             },
-            {
+            room4: {
                 roomName: 'suite mer du nord',
                 size: 2,
                 id: 4
             },
-            {
+            room5: {
                 roomName: 'suite pacifique',
                 size: 4,
                 id: 5
             },
-            {
+            room6: {
                 roomName: 'suite mer du nord',
                 size: 3,
                 id: 6
             },
-            {
+            room7: {
                 roomName: 'suite atlantique',
                 size: 2,
                 id: 7
             },
-            {
+            fkdjhkjsdh: {
                 roomName: 'suite pacifique',
                 size: 4,
                 id: 8
             },
-            {
+            lfehfgkdjsdhfjd: {
                 roomName: 'suite atlantique',
                 size: 3,
                 id: 9
             },
-            {
+            eofuhdkfdhksjfh: {
                 roomName: 'suite atlantique',
                 size: 5,
                 id: 10
             },
-            {
+            flezhkfdjhkdgfskf: {
                 roomName: 'suite pacifique',
                 size: 2,
                 id: 11
             },
-            {
+            zuhakahaljdlh: {
                 roomName: 'suite mer du nord',
                 size: 2,
                 id: 12
             },
-            {
+            lfekjhljhdkjdfhfdkj: {
                 roomName: 'suite manche',
                 size: 4,
                 id: 13
             },
-            {
+            zkoiuzaojaojaklj: {
                 roomName: 'suite manche',
                 size: 3,
                 id: 14
             },
-            {
+            djkjfhkjfhfdkjhfdj: {
                 roomName: 'suite mer du nord',
                 size: 5,
                 id: 15
             },
-        ]
+        }
     },
-    {
+    hotel3: {
         id: 3,
         name: 'hotel des Pins',
         roomNumbers: 7,
         pool: true,
-        rooms: [
-            {
+        rooms: {
+            ch1: {
                 roomName: 'suite bordelaise',
                 size: 2,
                 id: 1
             },
-            {
+            ch2: {
                 roomName: 'suite marseillaise',
                 size: 2,
                 id: 2
             },
-            {
+            ch23: {
                 roomName: 'suite nicoise',
                 size: 4,
                 id: 3
             },
-            {
+            ch89: {
                 roomName: 'suite canoise',
                 size: 2,
                 id: 4
             },
-            {
+            sshs: {
                 roomName: 'suite hendaiar',
                 size: 4,
                 id: 5
             },
-            {
+            sdisduye: {
                 roomName: 'suite canoise',
                 size: 3,
                 id: 6
             },
-            {
+            ksjqhfkhfskjdh: {
                 roomName: 'suite nicoise',
                 size: 2,
                 id: 7
             }
-        ]
+        }
     }
-];
+};
 
 
-
-
-
+/// faire tous les exos dans un premier temps avec des boucles for puis avec Object.keys ou Object.values
 
 // exercice 1 : trier les hotels par nombre de chambres (plus grand en 1er) et créer un tableau contenant seulement
 // le nom des hotels dans leur ordre de tri
@@ -208,4 +208,3 @@ const hostels = [
 // puis donner le nouvel index de l'hotel océan (faire 2 méthodes : avec indexOf et avec un foreach)
 
 // exercice 6 : créer un objet dont les clés sont le nom des hotels et dont la valeur est un booléen qui indique si l'hotel a une chambre qui s'appelle 'suite marseillaise'
-
