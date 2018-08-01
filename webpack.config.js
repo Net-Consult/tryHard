@@ -1,5 +1,5 @@
 module.exports = {
-    entry: "./array.js",
+    entry: "./observable.js",
     output: {
         filename: "bundle.js"
     },
