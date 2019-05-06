@@ -189,7 +189,7 @@ const hostels = [
 
 // exercice 1 : trier les hotels par nombre de chambres (plus grand en 1er) et créer un tableau contenant seulement
 // le nom des hotels dans leur ordre de tri
-const result = hostels
+/*const result = hostels
 
     .sort((hostel1, hostel2) => hostel2.roomNumbers - hostel1.roomNumbers)
     .map(hostel => hostel.name);
@@ -218,6 +218,7 @@ console.log(result1);
 
 // exercice 3 : mettre une majuscule à tous les mots qui sont dans l'attribut RoomName
 
+const result2 = hostels
 hostels.map(hostel=> {
     hostel.rooms.map(room => {
             room.roomName = room.roomName.split(' ')
@@ -230,7 +231,7 @@ hostels.map(hostel=> {
 
 
     );
-console.log(hostels);
+console.log(hostels);*/
 
 // exercice 4 : enlever toutes les chambres qui ont plus de 3 places et changer la valeur de roomNumbers pour qu'elle reflete
 // le nouveau nombre de chambres
@@ -241,4 +242,54 @@ console.log(hostels);
 // puis donner le nouvel index de l'hotel océan (faire 2 méthodes : avec indexOf et avec un foreach)
 
 // exercice 6 : créer un objet dont les clés sont le nom des hotels et dont la valeur est un booléen qui indique si l'hotel a une chambre qui s'appelle 'suite marseillaise'
+
+
+
+
+
+
+
+
+
+const tabPrenom = ['Lucie', 'George', 'luc', 'Kris', 'Dave', 'Marie', 'Elena'];
+
+
+const tabNom = ['Petit','Thomas','Michel','Roussel', 'Simon','Bailly','Langlois'];
+
+
+
+function generateAge() {
+    return Math.floor(Math.random() * 100 + 1);
+}
+console.log(generateAge());
+
+function generateFirstName() {
+   return tabPrenom[Math.floor(Math.random()*7)];
+}
+console.log(generateFirstName());
+
+function generateName() {
+    return tabNom[Math.floor (Math.random()*7)];
+}
+console.log(generateName());
+const people = [];
+for (let i=0; people.length<100; i=i+1){
+    const newPerson={
+        firstName:generateFirstName(),
+        Name : generateName(),
+        Age : generateAge(),
+    };
+    people.push (newPerson);
+
+};
+
+console.log(people)
+
+/*math.floor(math.random()*10);
+console.log(math.floor(math.random)*10);*/
+
+
+
+
+
 
