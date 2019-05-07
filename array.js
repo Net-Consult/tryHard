@@ -193,7 +193,7 @@ let hostels = [
 /*const choose = hostels
     .sort((hostel1, hostel2) => hostel2.roomNumbers - hostel1.roomNumbers )
     .map(hostel => hostel.name);
-console.log(choose);*/
+console.log(choose);
 
 // exercice 2 : faire un tableau avec toutes les chambres de tous les hotels, et ne garder que les chambres qui
 // ont plus que 3 places ou exactement 3 places et les classer par ordre alphabétique selon le nom de la chambre
@@ -210,13 +210,27 @@ const every = hostels
             return 1
         }
     });
-console.log(every);
+console.log(every);*/
 
 // exercice 3 : mettre une majuscule à tous les mots qui sont dans l'attribut RoomName
+
+const majuscule = hostels.map(hostel => { hostel.rooms
+    .map(room => {
+        room.roomName = room.roomName
+            .split(' ')
+            .map(word => word.charAt(0).toUpperCase() + word.substr(1))
+            .join(' ')
+        return room
+    })
+    return hostel
+});
+console.log(majuscule);
 
 
 // exercice 4 : enlever toutes les chambres qui ont plus de 3 places et changer la valeur de roomNumbers pour qu'elle reflete
 // le nouveau nombre de chambres
+
+
 
 
 // exercice 5  : extraire du tableau hostels l'hotel qui a le nom 'hotel ocean' en le supprimant du tableau, et le mettre dans une nouvelle variable
