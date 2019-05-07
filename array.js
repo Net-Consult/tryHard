@@ -190,9 +190,22 @@ let hostels = [
 // exercice 1 : trier les hotels par nombre de chambres (plus grand en 1er) et créer un tableau contenant seulement
 // le nom des hotels dans leur ordre de tri
 
+const choose = hostels
+    .sort((hostel1, hostel2) => hostel2.roomNumbers - hostel1.roomNumbers )
+    .map(hostel => hostel.name);
+console.log(choose);
 
 // exercice 2 : faire un tableau avec toutes les chambres de tous les hotels, et ne garder que les chambres qui
-// ont plus que 3 places ou exactement 3 places et les classer par ordre alphabétique selon le non de la chambre
+// ont plus que 3 places ou exactement 3 places et les classer par ordre alphabétique selon le nom de la chambre
+
+/*const every = hostels
+    .reduce((accumulator, hostels) => accumulator.concat(hostels.rooms), [])
+    .filter( room => room.size >= 3 )
+    .sort((room1, room2) => {
+        if(room1.roomName - room2.roomName)
+    }*/
+
+
 
 
 // exercice 3 : mettre une majuscule à tous les mots qui sont dans l'attribut RoomName
@@ -209,11 +222,20 @@ let hostels = [
 
 // exercice 6 : créer un objet dont les clés sont le nom des hotels et dont la valeur est un booléen qui indique si l'hotel a une chambre qui s'appelle 'suite marseillaise'
 
+/*const result = {};
 
+for (let i = 0; i < hostels.length; ++i) {
+    const hostel = hostels[i];
+    const rooms = hostel.rooms;
 
+    result[hostel.name] = false;
 
-
-
-
-
+    for (let i = 0; i < rooms.length; ++i) {
+        if (rooms[i].roomName === 'suite marseillaise') {
+            result[hostel.name] = true;
+            break;
+        }
+    }
+}
+console.log(result);*/
 
