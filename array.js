@@ -210,7 +210,7 @@ const every = hostels
             return 1
         }
     });
-console.log(every);*/
+console.log(every);
 
 // exercice 3 : mettre une majuscule à tous les mots qui sont dans l'attribut RoomName
 
@@ -224,13 +224,22 @@ const majuscule = hostels.map(hostel => { hostel.rooms
     })
     return hostel
 });
-console.log(majuscule);
+console.log(majuscule);*/
 
 
 // exercice 4 : enlever toutes les chambres qui ont plus de 3 places et changer la valeur de roomNumbers pour qu'elle reflete
 // le nouveau nombre de chambres
 
-
+hostels = hostels
+    .map(hostel => {
+        hostel.rooms = hostel.rooms.filter( room => room.size <= 3);
+        return hostel;
+    })
+    .map(hostel => {
+        hostel.roomNumbers = hostel.rooms.length;
+        return hostel;
+    });
+console.log(hostels);
 
 
 // exercice 5  : extraire du tableau hostels l'hotel qui a le nom 'hotel ocean' en le supprimant du tableau, et le mettre dans une nouvelle variable
