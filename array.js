@@ -191,7 +191,7 @@ let hostels = [
 // le nom des hotels dans leur ordre de tri
 
 /*const choose = hostels
-    .sort((hostel1, hostel2) => hostel2.roomNumbers - hostel1.roomNumbers )
+    .sort((hostel1, hostel2) => hostel2.roomNumbers - hostel1.roomNumbers)
     .map(hostel => hostel.name);
 console.log(choose);
 
@@ -203,18 +203,20 @@ const every = hostels
     .filter( room => room.size >= 3 )
     .sort((room1, room2) => {
         if(room1.roomName < room2.roomName) {
-            return -1
+            return -1;
         }
 
         if(room1.roomName > room2.roomName) {
-            return 1
+            return 1;
         }
+
+        return 0;
     });
-console.log(every);
+console.log(every);*/
 
 // exercice 3 : mettre une majuscule à tous les mots qui sont dans l'attribut RoomName
 
-const majuscule = hostels.map(hostel => { hostel.rooms
+/*const majuscule = hostels.map(hostel => { hostel.rooms
     .map(room => {
         room.roomName = room.roomName
             .split(' ')
@@ -233,9 +235,6 @@ console.log(majuscule);*/
 hostels = hostels
     .map(hostel => {
         hostel.rooms = hostel.rooms.filter( room => room.size <= 3);
-        return hostel;
-    })
-    .map(hostel => {
         hostel.roomNumbers = hostel.rooms.length;
         return hostel;
     });
@@ -243,8 +242,32 @@ console.log(hostels);
 
 
 // exercice 5  : extraire du tableau hostels l'hotel qui a le nom 'hotel ocean' en le supprimant du tableau, et le mettre dans une nouvelle variable
-// puis effacer toutes ses chambres et mettre à jour sa valeur room number, puis pusher l'hotel modifié dans hostel, puis faire un sort par nom d'hotel
+// puis effacer toutes ses chambres et mettre à jour sa valeur room number, puis pusher l'hotel modifié dans hostels, puis faire un sort par nom d'hotel
 // puis donner le nouvel index de l'hotel océan (faire 2 méthodes : avec indexOf et avec un foreach)
+
+const hotelIndex = hostels
+    .findIndex(hostel => hostel.name === 'hotel ocean');
+
+const hotelOcean = hostels[hotelIndex];
+
+hostels.splice(hotelIndex, 1);
+
+hotelOcean.rooms = [];
+hotelOcean.roomNumbers = 0;
+
+hostels.push(hotelOcean);
+hostels.sort((hostel1, hostel2) => hostel1.name < hostel2.name ? -1 : 1);
+
+const position1 = hostels.indexOf(hotelOcean);
+let position2 = -1;
+
+hostels.forEach((hostel, index) => {
+    if (hostel === hotelOcean) {
+        position2 = index;
+    }
+});
+
+console.log(position1, position2);
 
 
 // exercice 6 : créer un objet dont les clés sont le nom des hotels et dont la valeur est un booléen qui indique si l'hotel a une chambre qui s'appelle 'suite marseillaise'
