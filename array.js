@@ -190,7 +190,7 @@ let hostels = [
 // exercice 1 : trier les hotels par nombre de chambres (plus grand en 1er) et créer un tableau contenant seulement
 // le nom des hotels dans leur ordre de tri
 
-/*const choose = hostels
+const choose = hostels
     .sort((hostel1, hostel2) => hostel2.roomNumbers - hostel1.roomNumbers)
     .map(hostel => hostel.name);
 console.log(choose);
@@ -201,22 +201,12 @@ console.log(choose);
 const every = hostels
     .reduce((accumulator, hostels) => accumulator.concat(hostels.rooms), [])
     .filter( room => room.size >= 3 )
-    .sort((room1, room2) => {
-        if(room1.roomName < room2.roomName) {
-            return -1;
-        }
-
-        if(room1.roomName > room2.roomName) {
-            return 1;
-        }
-
-        return 0;
-    });
-console.log(every);*/
+    .sort((room1, room2) => room1.roomName < room2.roomName ? -1 : 1);
+console.log(every);
 
 // exercice 3 : mettre une majuscule à tous les mots qui sont dans l'attribut RoomName
 
-/*const majuscule = hostels.map(hostel => { hostel.rooms
+const majuscule = hostels.map(hostel => { hostel.rooms
     .map(room => {
         room.roomName = room.roomName
             .split(' ')
@@ -226,7 +216,7 @@ console.log(every);*/
     })
     return hostel
 });
-console.log(majuscule);*/
+console.log(majuscule);
 
 
 // exercice 4 : enlever toutes les chambres qui ont plus de 3 places et changer la valeur de roomNumbers pour qu'elle reflete
@@ -234,7 +224,7 @@ console.log(majuscule);*/
 
 hostels = hostels
     .map(hostel => {
-        hostel.rooms = hostel.rooms.filter( room => room.size <= 3);
+        hostel.rooms = hostel.rooms.filter(room => room.size <= 3);
         hostel.roomNumbers = hostel.rooms.length;
         return hostel;
     });
@@ -272,20 +262,12 @@ console.log(position1, position2);
 
 // exercice 6 : créer un objet dont les clés sont le nom des hotels et dont la valeur est un booléen qui indique si l'hotel a une chambre qui s'appelle 'suite marseillaise'
 
-/*const result = {};
+const result = {};
 
-for (let i = 0; i < hostels.length; ++i) {
-    const hostel = hostels[i];
-    const rooms = hostel.rooms;
+hostels.forEach(hostel => {
+    result[hostel.name] = Boolean(
+        hostel.rooms.find(room => room.roomName === 'Suite Marseillaise')
+    );
+});
 
-    result[hostel.name] = false;
-
-    for (let i = 0; i < rooms.length; ++i) {
-        if (rooms[i].roomName === 'suite marseillaise') {
-            result[hostel.name] = true;
-            break;
-        }
-    }
-}
-console.log(result);*/
-
+console.log(result);
