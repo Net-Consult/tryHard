@@ -43,26 +43,33 @@ console.log(moyenne);
 /*
 const pairTab = [];
 
-for( let i= 4; pairTab.length<20;i++){
+for( let i= 4; pairTab.length<20;i=i+2) {
 
-    if(i%2===0) {pairTab.push(i)}
+    pairTab.push(i);
+
+
+   // if(i%2===0) {pairTab.push(i)}
     }
 
 ;
 
 console.log(pairTab)
 
-*/
 
+*/
 // exercice 3 : Écrire un programme qui affiche les nombres de 1 à 199 avec un console log.
 // Mais pour les multiples de 3, afficher “Fizz” au lieu du nombre et pour les multiples de 5 afficher “Buzz”.
 // Pour les nombres multiples de 3 et 5, afficher “FizzBuzz”.
-
+/*
 for(let i=1; i<200;i++){
 
-    if (i%3===0) {console.log('"Fizz"')}
+
+if ((i%3===0)&&(i%5===0)){console.log ('"Fizz Buzz"')}
+    else if  (i%3===0) {console.log('"Fizz"')}
     else if (i%5===0){console.log('"Buzz"')}
     else {console.log(i)}
 
 };
 
+
+*/

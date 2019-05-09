@@ -190,7 +190,7 @@ let hostels = [
 // exercice 1 : trier les hotels par nombre de chambres (plus grand en 1er) et créer un tableau contenant seulement
 // le nom des hotels dans leur ordre de tri
 
-
+/*
 const rankedList = hostels
 
     .sort ((hostel1,hostel2)=> hostel2.roomNumbers - hostel1.roomNumbers)
@@ -198,7 +198,7 @@ const rankedList = hostels
 ;
 console.log(rankedList);
 
-
+*/
 // exercice 2 : faire un tableau avec toutes les chambres de tous les hotels, et ne garder que les chambres qui
 // ont plus que 3 places ou exactement 3 places et les classer par ordre alphabétique selon le non de la chambre
 /*
@@ -245,10 +245,43 @@ console.log(hostels);
 // puis effacer toutes ses chambres et mettre à jour sa valeur room number, puis pusher l'hotel modifié dans hostel, puis faire un sort par nom d'hotel
 // puis donner le nouvel index de l'hotel océan (faire 2 méthodes : avec indexOf et avec un foreach)
 /*
-const deleteHostel= hostes.filter(hostel=>hostel.name= 'hostel ocean')
+const index = hostels.findIndex(hostel=>hostel.name === 'hotel ocean')
+
+console.log(hostels);
+const newHostel = [hostels].splice(index,1);
 
 
-*/
+hostels.rooms= [];
+hostels.roomNumbers=hostes.rooms.length;
+hostels.push(hostel);
+
+hostels = hostels.sort((hostel1,hostel2)=> (hostel2.name< hostel1.name ? -1 : 1);
+
+const index2 = hostels.findIndex(hostel=>hostel.name === 'hotel ocean')
+
+const index2 = hostels.indesOf(hostel;)
+
+
+let index3= 0;
+let i=0
+hostels.forEach(hostel=> {
+    if (hostel.name==='hotel ocean'){
+
+        index3=i;
+    }
+    i++;});
+
+
+
+})
+
+
+newHostel
+    .map(hotel=>hotel.rooms.splice(0,15) )
+
+;
+console.log(index)
+
 
 
 
@@ -293,11 +326,11 @@ console.log(index)
 
 
 
-
+*/
 
 // exercice 6 : créer un objet dont les clés sont le nom des hotels et dont la valeur est un booléen qui indique si l'hotel a une chambre qui s'appelle 'suite marseillaise'
 
-
+/*
 const roomNameHostel = {};
 
 hostels.forEach(hostel => {
@@ -306,3 +339,4 @@ hostels.forEach(hostel => {
 
 console.log( roomNameHostel);
 
+*/

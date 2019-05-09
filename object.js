@@ -193,13 +193,13 @@ const hostels = {
 
 // exercice 1 : trier les hotels par nombre de chambres (plus grand en 1er) et créer un tableau contenant seulement
 // le nom des hotels dans leur ordre de tri
-
+/*
 for (let hostel in hostels){
 
     console .log(hostels;)
 }
 
-
+*/
 //Object.key(hostels).map
 
 // exercice 2 : faire un tableau avec toutes les chambres de tous les hotels, et ne garder que les chambres qui
