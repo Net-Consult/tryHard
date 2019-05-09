@@ -2,7 +2,6 @@
 const person = {firstName : '', lastName: '', age : 0};
 // bonus : calculer la moyenne des âges de personnes en utilisant un reduce
 
-
 // exercice 2 : générer un tableau contenant des nombres pairs consécutifs, le premier nombre du tableau doit être 4,
 // on doit arreter de remplir le tableau quand il y a 20 nombres pairs dans le tableau
 
