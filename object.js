@@ -199,7 +199,6 @@ const hostels = {
 
 // exercice 3 : mettre une majuscule à tous les mots qui sont dans l'attribut RoomName
 
-
 // exercice 4 : enlever toutes les chambres qui ont plus de 3 places et changer la valeur de roomNumbers pour qu'elle reflete
 // le nouveau nombre de chambres
 
