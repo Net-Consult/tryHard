@@ -189,10 +189,24 @@ const hostels = {
 };
 
 
-/// faire tous les exos dans un premier temps avec des boucles for puis avec Object.keys ou Object.values
+/// Faire tous les exos dans un premier temps avec des boucles for puis avec Object.keys ou Object.values
 
-// exercice 1 : trier les hotels par nombre de chambres (plus grand en 1er) et créer un tableau contenant seulement
-// le nom des hotels dans leur ordre de tri
+
+/*
+Exercice 1 : trier les hotels par nombre de chambres (plus grand en 1er) et créer un tableau contenant seulement
+le nom des hotels dans leur ordre de tri
+*/
+
+const result = Object.values(hostels)
+    .sort((value1, value2) => value2.roomNumbers - value1.roomNumbers)
+    .map((hostel) => hostel.name);
+
+console.log(result);
+
+
+
+
+
 
 // exercice 2 : faire un tableau avec toutes les chambres de tous les hotels, et ne garder que les chambres qui
 // ont plus que ou 3 places et les classer par ordre alphabétique selon le non de la chambre
