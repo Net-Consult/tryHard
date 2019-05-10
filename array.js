@@ -230,19 +230,21 @@ hostels = hostels.map(hostel => {
 console.log(hostels);
 */
 
+
 /*
 Exercice 4 : enlever toutes les chambres qui ont plus de 3 places et changer la valeur de roomNumbers pour qu'elle
 reflete le nouveau nombre de chambres
 */
-/*
-const result = hostels.map(hostel => { hostel.rooms = hostel.rooms
-        .filter(ranking => ranking.size >= 3);
-            return hostel })
-    .map(newHostel => { newHostel.roomNumbers = newHostel.rooms.length;
-    return newHostel });
 
-console.log(result);
+/*
+hostels = hostels.map(hostel => {
+    hostel.rooms = hostel.rooms
+        .filter(ranking => ranking.size >= 3));
+console.log(hostels);
+
 */
+
+
 
 
 
@@ -258,15 +260,7 @@ Exercice 6 : créer un objet dont les clés sont le nom des hotels et dont la va
 l'hotel a une chambre qui s'appelle 'suite marseillaise'
 */
 
-/*
-let result = {};
 
-hostels.forEach(hostel =>
-    object[hostel.name] = hostel.rooms
-        .filter(hostel => hostel.roomName === 'suite marseillaise').length > 0);
-
-console.log(result);
-*/
 
 
 

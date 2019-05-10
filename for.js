@@ -4,8 +4,6 @@
 
 
 
-
-
 /*
 Exercice 1 : générer un array avec 100 objets avec la forme ci dessous, dont les données sont toutes aléatoires
 bonus : calculer la moyenne des âges de personnes en utilisant un reduce
@@ -40,10 +38,10 @@ for (let i = 0; user.length < 20; i++) {
         age: age()
     };
 
-    persons.push(newPerson)
+    user.push(newPerson)
 }
 
-//const person = {firstName : '', lastName: '', age : 0};
+console.log(user);
 
 
 
