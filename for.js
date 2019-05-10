@@ -1,5 +1,5 @@
-// exercice 1 : générer un array avec 100 objets avec la forme ci dessous, dont les données sont toutes aléatoires
-/*
+ exercice 1 : générer un array avec 100 objets avec la forme ci dessous, dont les données sont toutes aléatoires
+/
 const person = {firstName : '', lastName: '', age : 0};
 //bonus : calculer la moyenne des âges de personnes en utilisant un reduce
 

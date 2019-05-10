@@ -190,32 +190,49 @@ let hostels = [
 //exercice 1 : trier les hotels par nombre de chambres (plus grand en 1er) et créer un tableau contenant seulement
 //le nom des hotels dans leur ordre de tri
 
-/*const ranked= hostels
-    .sort((hotel1, hotel2 ) =>
-    hotel2.roomNumbers - hotel1.roomNumbers)
+/*const result = hostels
+    .sort((hostel1, hostel2 ) => hostel2.roomNumbers - hostel1.roomNumbers)
+    .map(hostel =>hostel.name);
+console.log(result);
 
-
-    console.log(ranked);*/
  //exercice 2 : faire un tableau avec toutes les chambres de tous les hotels, et ne garder que les chambres qui
- //ont plus que 3 places ou exactement 3 places et les classer par ordre alphabétique selon le non de la chambre
+// ont plus que 3 places ou exactement 3 places et les classer par ordre alphabétique selon le non de la chambre
 
-/*
-.map(compareFn(hostels)=>hoste.rooms
-*/
+const rooms = hostels
+    .reduce((previousValue, currentValue) => previousValue.concat(currentValue.rooms),[])
+    .filter(room=> room.size >=3)
+    .sort((room1 , room2) => room1.roomName<room2.roomName ?-1:1);
+console.log(rooms);
 
- // exercice 3 : mettre une majuscule à tous les mots qui sont dans l'attribut RoomName
+// exercice 3 : mettre une majuscule à tous les mots qui sont dans l'attribut RoomName
 
- hostels = hostels.map(hostel=>{ }
+ hostels= hostels
+     .map(hostel=> {hostel.rooms
+         .map(room => room.roomName= room.roomName
+             .split(' ')
+             .map(room => room.charAt(0).toUpperCase()+ room.slice(1))
+             .join(' '));
+     return hostel;
+         });
+console.log(hostels);
 
 //exercice 4 : enlever toutes les chambres qui ont plus de 3 places et changer la valeur de roomNumbers pour qu'elle reflete
-/*
- le nouveau nombre de chambres
+ //le nouveau nombre de chambres
+
+hostels=hostels
+    .map(hostel => {
+        hostel.rooms= hostel.rooms
+            .filter(room=>room.size<= 3);
+        return hostel;
+        });
+console.log(hostels);*/
 
 
  //exercice 5  : extraire du tableau hostels l'hotel qui a le nom 'hotel ocean' en le supprimant du tableau, et le mettre dans une nouvelle variable
-puis effacer toutes ses chambres et mettre à jour sa valeur room number, puis pusher l'hotel modifié dans hostel, puis faire un sort par nom d'hotel
- puis donner le nouvel index de l'hotel océan (faire 2 méthodes : avec indexOf et avec un foreach)
-*/
+//puis effacer toutes ses chambres et mettre à jour sa valeur room number, puis pusher l'hotel modifié dans hostel, puis faire un sort par nom d'hotel
+ //puis donner le nouvel index de l'hotel océan (faire 2 méthodes : avec indexOf et avec un foreach)
+
+
 
 
  //exercice 6 : créer un objet dont les clés sont le nom des hotels et dont la valeur est un booléen qui indique si l'hotel a une chambre qui s'appelle 'suite marseillaise'
