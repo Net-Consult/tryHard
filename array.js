@@ -253,8 +253,6 @@ hostels.sort((hostell1 , hostell2) => hostell2.name > hostell1.name ? -1 : 1);
 
 const nIndex = hostels.indexOf(hostel);
 
-
-
 console.log(nIndex);*/
 
 
@@ -265,6 +263,4 @@ console.log(nIndex);*/
 hostels.forEach(hostel => object[hostel.name] = hostel.rooms.filter(hostel => hostel.roomName === 'suite marseillaise').length > 0);
 
 console.log(object);*/
-
-
 

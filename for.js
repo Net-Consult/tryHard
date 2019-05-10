@@ -3,7 +3,7 @@ const person = {firstName : '', lastName: '', age : 0};
 // bonus : calculer la moyenne des âges de personnes en utilisant un reduce
 
 const firstName = ['Loic', 'Brice', 'Anna', 'Ibrahima', 'Sebastien', 'Alina', 'Morgane', 'Bender', 'Fry', 'Léo', 'Président'];
-const lastName = ['Charo', 'Loup', 'Vautour', 'Cannibale', 'Chouette', 'Canaille', 'Tricard', 'Fripouille', 'Bandit', 'Chicken', 'Pard'];
+const lastName = ['Charo', 'Charlatan', 'Vautour', 'Cannibale', 'Chouette', 'Canaille', 'Tricard', 'Fripouille', 'Bandit', 'Chicken', 'Pard'];
 
 function generateName() {
     return firstName[Math.floor(Math.random()*11)];
@@ -40,10 +40,8 @@ console.log(moyenAge);*/
 
 /*let tab = [];
 
-for (let i = 4; tab.length < 20; i++) {
-    if (i % 2 === 0) {
+for (let i = 4; tab.length < 20; i+=2) {
         tab.push(i);
-    }
 }
 
 console.log(tab);*/
