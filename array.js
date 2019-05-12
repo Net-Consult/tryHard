@@ -206,30 +206,31 @@ console.log(rooms);
 
 // exercice 3 : mettre une majuscule à tous les mots qui sont dans l'attribut RoomName
 
-hostels = hostels
+hostels
     .map(hostel => {
         hostel.rooms
             .map(room => room.roomName = room.roomName
                 .split(' ')
                 .map(room => room.charAt(0).toUpperCase() + room.slice(1))
-                .join(' '));
+                .join(' ')
+            );
         return hostel;
     });
-    console.log(hostels);
+console.log(hostels);
 
 // exercice 4 : enlever toutes les chambres qui ont plus de 3 places et changer la valeur de roomNumbers pour qu'elle reflete
 // le nouveau nombre de chambres
 
-hostels = hostels
-    .map(hostel => {
-        hostel.rooms = hostel.rooms
-            .filter(room => room.size <= 3);
+hostels
+    .map(hostel => {hostel.rooms = hostel.rooms
+        .filter(room => room.size <= 3)
         return hostel;
-
-    }).map(hostel => {hostel.roomNumbers = hostel.rooms.length
-    return hostel;
+    })
+    .map(hostel => {
+        hostel.roomNumbers = hostel.rooms.length
+        return hostel;
     });
-    console.log(hostels);*/
+console.log(hostels);
 
 // exercice 5  : extraire du tableau hostels l'hotel qui a le nom 'hotel ocean' en le supprimant du tableau, et le mettre dans une nouvelle variable
 // puis effacer toutes ses chambres et mettre à jour sa valeur room number, puis pusher l'hotel modifié dans hostel, puis faire un sort par nom d'hotel
@@ -249,9 +250,7 @@ console.log(hostel);
 const myObj ={};
 hostels.forEach(hostel => myObj[hostel.rooms] = hostel.rooms
     .filter(hostel=> hostel.roomName === 'suite marseillaise').length > 0);
-console.log(myObj);
-
-
+console.log(myObj);*/
 
 
 

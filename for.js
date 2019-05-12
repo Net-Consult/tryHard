@@ -5,25 +5,26 @@ const person = {firstName : '', lastName: '', age : 0};
 const firstName = ['Harry', 'Hermione', 'Ron', 'Albus', 'Severus'];
 const lastName = ['Potter', 'Granger', 'Weasley', 'Dumbledore', 'Rogue'];
 
-function generateFistName() {
+function generateFirstName() {
     return firstName[Math.floor((Math.random()*5))]
 }
-console.log(generateFistName());
+console.log(generateFirstName());
 
-function generateLastName () {
+function generateLastName() {
     return lastName[Math.floor((Math.random()*5))]
 }
 console.log(generateLastName());
 
-function generateAge () {
+function generateAge() {
     return (Math.floor(Math.random()*100+1))
 }
 console.log(generateAge());
 
 const people = [];
-for (let i=0; people.length<100; i++) {
+
+for(let i=0; people.length<100; i++) {
     const newUser = {
-        firstName: generateFistName(),
+       firstName: generateFirstName(),
         lastName: generateLastName(),
         age: generateAge()
     };
@@ -31,10 +32,11 @@ for (let i=0; people.length<100; i++) {
 }
 console.log(people);
 
+
 // exercice 2 : générer un tableau contenant des nombres pairs consécutifs, le premier nombre du tableau doit être 4,
 // on doit arreter de remplir le tableau quand il y a 20 nombres pairs dans le tableau
 
-const tab = []
+const tab = [];
 for (let i=4; tab.length<20; i+=2){
     tab.push(i);
 }
