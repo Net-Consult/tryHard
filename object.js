@@ -196,6 +196,7 @@ const hostels = {
 Exercice 1 : trier les hotels par nombre de chambres (plus grand en 1er) et créer un tableau contenant seulement
 le nom des hotels dans leur ordre de tri
 */
+/*
 
 const result = Object.values(hostels)
     .sort((value1, value2) => value2.roomNumbers - value1.roomNumbers)
@@ -203,15 +204,33 @@ const result = Object.values(hostels)
 
 console.log(result);
 
+*/
 
 
 
+/*
+Exercice 2 : faire un tableau avec toutes les chambres de tous les hotels, et ne garder que les chambres qui ont plus
+que ou 3 places et les classer par ordre alphabétique selon le non de la chambre.
+*/
+/*
+
+const result = Object.values(hostels)
+    .map((hostel) => hostel.rooms)
+    .reduce((accumulator, rooms) => {
+        return accumulator.concat(Object.values(rooms))
+    }, [])
+    .filter((rankingRoom) => rankingRoom.size >= 3)
+    .sort((orderRoom1, orderRoom2) => orderRoom2.roomName > orderRoom1.roomName ? -1 : 0);
+
+console.log(result);
+
+*/
 
 
-// exercice 2 : faire un tableau avec toutes les chambres de tous les hotels, et ne garder que les chambres qui
-// ont plus que ou 3 places et les classer par ordre alphabétique selon le non de la chambre
 
-// exercice 3 : mettre une majuscule à tous les mots qui sont dans l'attribut RoomName
+/*
+Exercice 3 : mettre une majuscule à tous les mots qui sont dans l'attribut RoomName
+*/
 
 
 // exercice 4 : enlever toutes les chambres qui ont plus de 3 places et changer la valeur de roomNumbers pour qu'elle reflete

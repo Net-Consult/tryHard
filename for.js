@@ -6,6 +6,7 @@ Exercice 1 : générer un array avec 100 objets avec la forme ci dessous, dont l
 Bonus : calculer la moyenne des âges de personnes en utilisant un reduce de la forme :
 {firstName: " ", lastName: " ", age: xx}
 */
+
 /*
 
 const firstName = ['Sarida', 'Loïc', 'Brice', 'Mehdi', 'Laurent',
@@ -55,6 +56,7 @@ console.log(ageAverage);
 Exercice 2 : générer un tableau contenant des nombres pairs consécutifs, le premier nombre du tableau doit être 4, on
 doit arreter de remplir le tableau quand il y a 20 nombres pairs dans le tableau.
 */
+
 /*
 
 const tab = [];
@@ -73,6 +75,7 @@ Exercice 3 : Écrire un programme qui affiche les nombres de 1 à 199 avec un co
 Mais pour les multiples de 3, afficher “Fizz” au lieu du nombre et pour les multiples de 5 afficher “Buzz”.
 Pour les nombres multiples de 3 et 5, afficher “FizzBuzz”.
 */
+
 /*
 
 for (let i = 0; i < 199; i++) {
