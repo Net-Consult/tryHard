@@ -1,17 +1,37 @@
-class Hostel {
+/*class Hostel {
 
     id;
     name;
     roomNumbers;
     pool;
+    rooms;
 
-    constructor(id, name, roomNumbers, pool) {
-    this.id= id;
-    this.name= name;
-    this.roomNumbers= roomNumbers;
-    this.pool= pool;
+    constructor(id, name, roomNumbers, pool, ...others) {
+    this.id = id;
+    this.name = name;
+    this.roomNumbers = roomNumbers;
+    this.pool = pool;
+    this.rooms = others;
     }
 }
+
+class Room {
+    roomName;
+    size;
+    id;
+
+    constructor(roomName, size, id) {
+        this.roomName = roomName;
+        this.size = size;
+        this.id = id;
+    }
+}
+const hostel1 = new Hostel(1, 'hotel rose', 10, true);
+const hostel2 = new Hostel(2, 'hotel ocean', 15, false);
+const hostel3 = new Hostel(3, 'hotel des Pins', 7, true);*/
+
+
+
 
 
 
