@@ -1,4 +1,17 @@
+class Hostel {
 
+    id;
+    name;
+    roomNumbers;
+    pool;
+
+    constructor(id, name, roomNumbers, pool) {
+    this.id= id;
+    this.name= name;
+    this.roomNumbers= roomNumbers;
+    this.pool= pool;
+    }
+}
 
 
 
