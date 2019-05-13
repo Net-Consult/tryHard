@@ -1,4 +1,4 @@
-const hostels = {
+let hostels = {
     hotel1: {
         id: 1,
         name: 'hotel rose',
@@ -194,16 +194,39 @@ const hostels = {
 // exercice 1 : trier les hotels par nombre de chambres (plus grand en 1er) et créer un tableau contenant seulement
 // le nom des hotels dans leur ordre de tri
 
+/*const trie = Object.values(hostels).sort((hostel1, hostel2) => hostel2.roomNumbers - hostel1.roomNumbers)
+    .map(hostel => hostel.name);
 
+console.log(trie);*/
 
 // exercice 2 : faire un tableau avec toutes les chambres de tous les hotels, et ne garder que les chambres qui
 // ont plus que ou 3 places et les classer par ordre alphabétique selon le non de la chambre
 
+/*const tab = Object.values(hostels).map(hostel => hostel.rooms).reduce((acc, hostel) => acc.concat(Object.values(hostel)),[])
+    .filter(room => room.size >= 3).sort((hostel1, hostel2) => hostel2.roomName > hostel1.roomName ? -1 : 1);
+
+console.log(tab);*/
+
 // exercice 3 : mettre une majuscule à tous les mots qui sont dans l'attribut RoomName
+
+/*hostels = Object.values(hostels).map(hostel => { Object.values(hostel.rooms).map(room => room.roomName = room.roomName.split(' ')
+    .map(chName => chName.charAt(0).toLocaleUpperCase() + chName.slice(1))
+    .join(' '));
+return hostel
+})
+
+console.log(hostels);*/
 
 
 // exercice 4 : enlever toutes les chambres qui ont plus de 3 places et changer la valeur de roomNumbers pour qu'elle reflete
 // le nouveau nombre de chambres
+
+/*let tChambre = Object.values(hostels).map(hostel => {
+    hostel.rooms = Object.values(hostel.rooms).filter(room => room.size >= 3);
+    return hostel;
+})
+
+console.log(tChambre);*/
 
 // exercice 5  : extraire du tableau hostels l'hotel qui a le nom 'hotel ocean' en le supprimant du tableau, et le mettre dans une nouvelle variable
 // puis effacer toutes ses chambres et mettre à jour sa valeur room number, puis pusher l'hotel modifié dans hostel, puis faire un sort par nom d'hotel
