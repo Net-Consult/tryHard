@@ -68,8 +68,9 @@ console.log(roomHostel);
 
 
 let hostel = new Hostels(1, 'hotel rose', 10, true, 'roomName');
-
+bonjour
 display*/
+
 
 
 
