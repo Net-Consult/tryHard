@@ -192,21 +192,18 @@ let hostels = {
 /// faire tous les exos dans un premier temps avec des boucles for puis avec Object.keys ou Object.values
 
 
-
 // exercice 1 : trier les hotels par nombre de chambres (plus grand en 1er) et créer un tableau contenant seulement
 // le nom des hotels dans leur ordre de tri
 
- /*for (let hostel in hostels ) {
-     console.log(Object.values(hostels).sort((a, b) => {a.roomNumbers > b.roomNumbers}));
+/*for (let hostel in hostels ) {
+    console.log(Object.values(hostels).sort((a, b) => {a.roomNumbers > b.roomNumbers}));
 
- }*/
+}*/
 
 
- /*const hostel=hostels
+/*const hostel=hostels
 console.log(Object.keys(Object.values(hostel)));
 */
-
-
 
 
 /*
@@ -219,12 +216,8 @@ console.log(Object.values(obj).sort( (room1, room2) => room2.roomNumbers - room1
 */
 
 
-
 // exercice 2 : faire un tableau avec toutes les chambres de tous les hotels, et ne garder que les chambres qui
 // ont plus que ou 3 places et les classer par ordre alphabétique selon le nom de la chambre
-
-
-
 
 
 /*
@@ -236,39 +229,39 @@ console.log(Object.values(hostels).reduce((previousValue, currentValue) => previ
 */
 
 
-
-
 // exercice 3 : mettre une majuscule à tous les mots qui sont dans l'attribut RoomName
 
 
-
 /*
-const obj = hostels
-
-console.log(Object.values(hostels).reduce((previousValue, currentValue) => previousValue.concat(Object.values(currentValue.roomName)),[])
-    .map(value => value.roomName.charAt(0).toUpperCase() + value.splice(1))
-    .join(' '));*/
-
-
 const obj = hostels
 console.log( Object.values(hostels).map(hostel => { Object.values(hostel.rooms).map(room => room.roomName = room.roomName.split(' ')
     .map(value => value.charAt(0).toLocaleUpperCase() + value.slice(1))
     .join(' '));
     return hostel
-}))
-
-
+}))*/
 
 
 // exercice 4 : enlever toutes les chambres qui ont plus de 3 places et changer la valeur de roomNumbers pour qu'elle reflete
 // le nouveau nombre de chambres
 
 
+/*
+hostels = hostels.map(value => {
+    Object.values(value.rooms)
+
+        .filter(result => result.size <= 3)
+
+    return value
+});
+
+
+console.log(Object.values(hostels)
+*/
+
+
 // exercice 5  : extraire du tableau hostels l'hotel qui a le nom 'hotel ocean' en le supprimant du tableau, et le mettre dans une nouvelle variable
 // puis effacer toutes ses chambres et mettre à jour sa valeur room number, puis pusher l'hotel modifié dans hostel, puis faire un sort par nom d'hotel
 // puis donner le nouvel index de l'hotel océan (faire 2 méthodes : avec indexOf et avec un foreach)
-
-
 
 
 // exercice 6 : créer un objet dont les clés sont le nom des hotels et dont la valeur est un booléen qui indique si l'hotel a une chambre qui s'appelle 'suite marseillaise'
