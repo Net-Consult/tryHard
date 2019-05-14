@@ -1,53 +1,46 @@
 
 
-const id = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const size = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const hostelRoomName = ['suite parisienne', 'suite lilloise', 'suite marseillaise', 'suite bordelaise', 'suite lyonnaise',
-    'suite niçoise', 'suite de perpignan', 'suite brestoise', 'suite nantaise', 'suite de aliens'];
-
-
-
 class Room {
 
-    addId;
-    addSize;
-    addRoomName;
+    id;
+    size;
+    roomName;
 
-    constructor(addId, addSize, addRoomName) {
-        Room.addId = addId;
-        Room.addSize = addSize;
-        Room.addRoomName = addRoomName;
+    constructor(paramId, paramSize, paramRoomName) {
+
+        this.id = paramId;
+        this.size = paramSize;
+        this.roomName = paramRoomName
     }
-
-
-    addId() {
-        return id;
-    }
-
-    addSize() {
-        return size[Math.floor(Math.random() * 10)];
-    }
-
-    addRoomName() {
-        return hostelRoomName[Math.floor(Math.random() * 10)];
-    }
-
-/*    static addGenerateRooms() {
-
-        let rooms = [];
-
-        for (let i = 0; rooms.length < 10; i++) {
-
-            const newRooms = {
-                id: Room.addId(),
-                size: Room.addSize(),
-                roomName: Room.addRoomName()
-            };
-
-            rooms.push(newRooms);
-        }
-    }*/
 }
 
-const result = new Room(addId, addSize, addRoomName);
-console.log(result);
+
+const room1 = new Room(1, 3, 'suite parisienne');
+const room2 = new Room(2, 2, 'suite lyonnaise');
+const room3 = new Room(3, 4, 'suite marseillaise');
+const room4 = new Room(4, 2, 'suite bordelaise');
+const room5 = new Room(5, 3, 'suite toulousaine');
+
+
+class Hostel {
+
+    id;
+    name;
+    roomNumbers;
+    pool;
+    rooms;
+
+    constructor(id, name, roomNumbers, pool, ...rooms){
+
+        this.id = id;
+        this.name = name;
+        this.roomNumbers = roomNumbers;
+        this.pool = pool;
+        this.rooms = rooms
+    }
+}
+
+const hostel1 = new Hostel(1, 'Hotel ocean', 12, true, room1,room2, room3, room4, room5);
+
+console.log(hostel1);
+
