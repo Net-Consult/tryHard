@@ -192,8 +192,8 @@ const hostels = [
 
 // exercice 1 : trier les hotels par nombre de chambres (plus grand en 1er) et créer un tableau contenant seulement
 // le nom des hotels dans leur ordre de tri
-console.log(hostels);
-console.log('coucou')
+
+
 
 // exercice 2 : faire un tableau avec toutes les chambres de tous les hotels, et ne garder que les chambres qui
 // ont plus que ou 3 places et les classer par ordre alphabétique selon le non de la chambre
