@@ -242,10 +242,20 @@ console.log(Object.values(hostels).reduce((previousValue, currentValue) => previ
 
 
 
+/*
+const obj = hostels
+
+console.log(Object.values(hostels).reduce((previousValue, currentValue) => previousValue.concat(Object.values(currentValue.roomName)),[])
+    .map(value => value.roomName.charAt(0).toUpperCase() + value.splice(1))
+    .join(' '));*/
 
 
-
-
+const obj = hostels
+console.log( Object.values(hostels).map(hostel => { Object.values(hostel.rooms).map(room => room.roomName = room.roomName.split(' ')
+    .map(value => value.charAt(0).toLocaleUpperCase() + value.slice(1))
+    .join(' '));
+    return hostel
+}))
 
 
 
