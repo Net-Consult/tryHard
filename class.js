@@ -1,3 +1,15 @@
+class Room {
+    roomName;
+    size;
+    id;
+
+    constructor(roomName, size, id) {
+        this.roomName = roomName;
+        this.size = size;
+        this.id = id;
+    }
+}
+
 class Hostel {
 
     id;
@@ -13,38 +25,11 @@ class Hostel {
     this.pool = pool;
     this.rooms = rooms;
     }
-    pushIn() {
-        tab.push(this);
-        return this;
 }
-}
-
-class Room {
-    roomName;
-    size;
-    id;
-
-    constructor(roomName, size, id) {
-        this.roomName = roomName;
-        this.size = size;
-        this.id = id;
-    }
-    pushIn() {
-        tab2.push(this);
-        return this;
-    }
-}
-
-let tab = [];
-let tab2 = [];
 
 const hostel1 = new Hostel(1, 'hotel rose', 10, true);
 const hostel2 = new Hostel(2, 'hotel ocean', 15, false);
 const hostel3 = new Hostel(3, 'hotel des Pins', 7, true);
-
-console.log(tab);
-console.log(tab2);
-
 
 
 // exercice 1 : trier les hotels par nombre de chambres (plus grand en 1er) et créer un tableau contenant seulement
