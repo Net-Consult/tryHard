@@ -242,15 +242,10 @@ console.log(Object.values(hostels).reduce((previousValue, currentValue) => previ
 
 
 
-/*
-const obj = hostels
-
-console.log(Object.values(hostels).reduce((previousValue, currentValue) => previousValue.concat(Object.values(currentValue.rooms)),[])
-    .map(value => value.roomName.toUpperCase().charAt(0)+value.splice(1)));
 
 
 
-*/
+
 
 
 
