@@ -194,9 +194,16 @@ const hostels = [
 
     .sort( (room1, room2) => room2.roomNumbers - room1.roomNumbers)
     .map( value => value.name)
-
-
 console.log(hostel);*/
+
+
+
+
+
+
+/* les classes*/
+
+
 
 // exercice 2 : faire un tableau avec toutes les chambres de tous les hotels, et ne garder que les chambres qui
 // ont plus que 3 places ou exactement 3 places et les classer par ordre alphabétique selon le nom de la chambre
