@@ -222,9 +222,11 @@ console.log(hostels);*/
 // le nouveau nombre de chambres
 
 /*let tChambre = Object.values(hostels).map(hostel => {
-    hostel.rooms = Object.values(hostel.rooms).filter(room => room.size >= 3);
+    hostel.rooms = Object.values(hostel.rooms).filter(room => room.size <= 3);
     return hostel;
-})
+}).map(hostel => { Object.values(hostel.roomNumbers = hostel.rooms.length);
+    return hostel;
+});
 
 console.log(tChambre);*/
 
@@ -232,4 +234,27 @@ console.log(tChambre);*/
 // puis effacer toutes ses chambres et mettre à jour sa valeur room number, puis pusher l'hotel modifié dans hostel, puis faire un sort par nom d'hotel
 // puis donner le nouvel index de l'hotel océan (faire 2 méthodes : avec indexOf et avec un foreach)
 
+/*const index = Object.values(hostels).findIndex(hostel => hostel.name === 'hotel ocean');
+
+const [hostelOcean] = Object.values(hostels).splice(index, 1);
+
+hostelOcean.rooms = [];
+
+hostelOcean.roomNumbers = hostelOcean.rooms.length;
+
+Object.values(hostels).push(hostelOcean);
+
+Object.values(hostels).sort((hostel1, hostel2) => hostel2.name < hostel1.name ? -1 : 1);
+
+
+
+console.log(hostels);*/
+
 // exercice 6 : créer un objet dont les clés sont le nom des hotels et dont la valeur est un booléen qui indique si l'hotel a une chambre qui s'appelle 'suite marseillaise'
+
+/*let object = {};
+
+Object.values(hostels).forEach(hostel => object[hostel.name] = Object.values(hostel.rooms).filter(hostel => hostel.roomName === 'suite marseillaise').length > 0);
+
+console.log(object);*/
+
