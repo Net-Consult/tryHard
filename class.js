@@ -1,3 +1,10 @@
+class Room {
+    constructor(roomName, size) {
+        this.roomName = roomName;
+        this.size = size;
+    }
+}
+
 class Hostel {
     constructor(name, pool, rooms) {
         this.name = name;
@@ -7,58 +14,60 @@ class Hostel {
     }
 }
 
-class Room {
-    constructor(roomName, size) {
-        this.roomName = roomName;
-        this.size = size;
+class Country {
+    name;
+    Hostel;
+    Room;
+
+    constructor(name,Hostel,...Room) {
+        this.name = name;
+        this.Hostel = Hostel;
+        this.Room = Room;
+
+        return this
     }
 }
 
+
+
+const country =  new Country('France', Hostel, Room);
+
+console.log(country);
+
+
 let hostels = [
-    new Hostel('Hotel Printemps', true, [
+        new Hostel('Hotel Printemps', true, [
         new Room('suite de luxe', 2),
         new Room('suite nuptiale', 2),
         new Room('suite familiale', 4),
         new Room('suite budget', 2),
-        new Room('suite familiale', 4),
-        new Room('suite budget', 3),
-        new Room('suite de luxe', 2),
-        new Room('suite familiale', 4),
-        new Room('suite de luxe', 3),
-        new Room('suite présidentielle', 5)
     ]),
-    new Hostel('Hotel Eiffel', false, [
+        new Hostel('Hotel Eiffel', false, [
         new Room('suite pacifique', 2),
         new Room('suite atlantique', 2),
         new Room('suite manche', 4),
         new Room('suite mer du nord', 2),
-        new Room('suite pacifique', 4),
-        new Room('suite mer du nord', 3),
-        new Room('suite atlantique', 2),
-        new Room('suite pacifique', 4),
-        new Room('suite atlantique', 3),
-        new Room('suite atlantique', 5),
-        new Room('suite pacifique', 2),
-        new Room('suite mer du nord', 2),
-        new Room('suite manche', 4),
-        new Room('suite manche', 3),
-        new Room('suite mer du nord', 5)
+        new Room('suite indienne', 4),
+        new Room('suite adriatique', 3),
     ]),
-    new Hostel('Hotel Montmartre', true, [
+
+        new Hostel('Hotel Montmartre', true, [
         new Room('suite bordelaise', 2),
         new Room('suite marseillaise', 2),
         new Room('suite nicoise', 4),
         new Room('suite canoise', 2),
         new Room('suite hendaiar', 4),
-        new Room('suite canoise', 3),
-        new Room('suite nicoise', 2)
-    ])
+    ]),
 ];
+
+
 
 console.log(hostels);
 
 // exercice 1 : trier les hotels par nombre de chambres (plus grand en 1er) et créer un tableau contenant seulement
 // le nom des hotels dans leur ordre de tri
+
+
 
 // exercice 2 : faire un tableau avec toutes les chambres de tous les hotels, et ne garder que les chambres qui
 // ont plus que 3 places ou exactement 3 places et les classer par ordre alphabétique selon le nom de la chambre
