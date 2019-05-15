@@ -103,7 +103,7 @@ const city = new City(hostel1, hostel2, hostel3);
 
 /*city.filterOver3rooms().displayCity();*/
 
-city.displayCity()
+city.displayCity();
 
 
 
