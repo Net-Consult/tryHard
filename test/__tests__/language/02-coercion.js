@@ -1,14 +1,14 @@
 describe("Coercion", () => {
   it("Coercion - 1", () => {
-    expect(3 + 7 === 10).toBe(_);
+    expect(3 + 7 === 10).toBe(true);
   });
 
   it("Coercion - 2", () => {
-    expect(3 + 7 == "10").toBe(_);
+    expect(3 + 7 == "10").toBe(true);
   });
 
   it("Coercion - 3", () => {
-    expect(1 == true).toBe(_);
+    expect(1 == true).toBe(true);
   });
 
   it("Coercion - 4", () => {
@@ -16,7 +16,7 @@ describe("Coercion", () => {
   });
 
   it("Coercion - 5", () => {
-    expect("3" + 7 == "37").toBe(_);
+    expect("3" + 7 == "37").toBe();
   });
 
   it("Coercion - 6", () => {
@@ -28,7 +28,7 @@ describe("Coercion", () => {
   });
 
   it("Coercion - 8", () => {
-    expect(1 + true === "1true").toBe(_);
+    expect(1 + true === "1true").toBe();
   });
 
   it("Coercion - 9", () => {
@@ -36,6 +36,6 @@ describe("Coercion", () => {
   });
 
   it("Coercion - 10", () => {
-    expect("3" + "7" == 37).toBe(_);
+    expect("3" + "7" == 37).toBe();
   });
 });
