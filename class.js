@@ -5,36 +5,37 @@
 
 class User {
 
-    constructor (name1, name2, name3,) {
+    constructor (name1, name2, name3) {
         this.name1 = name1;
         this.name2 = name2;
         this.name3 = name3;
 
     }
+}
+const user = new User ('hotel ocean', 'hotel rose', 'hotel des pins');
 
-/*const user = new User ('hotel ocean', 'hotel rose', 'hotel des pins');*/
-/*};*/
-
-
-/* class hostel{
-             RoomNumbers;
+console.log(user);
 
 
-     constructor(...paraRoomNumbers){
-         this.Hotels = paraRoomNumbers
+class User1 {
+
+      constructor (...RoomNumbers){
+         this.RoomNumbers = RoomNumbers;
+
+          this.User = this.RoomNumbers.length;
+          this.Hostels.push(Hostels);
+      }
+
      }
+const user1 = new User (RoomNumbers);
 
-     }
-     this.Hostels.push(Hostels);
-
-        this.hostel = this.paraRoomNumbers.length;
-
-         return this;
-
-        /*const()*/
+console.log(User1);
 
 
-/*console.log(Hotels)*/
+
+
+
+
 /*this.roomNumbers1 = roomNumbers1
 
 
