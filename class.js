@@ -69,7 +69,7 @@ class filterRoom {
     ranking;
 
     constructor(...ranking) {
-        this.ranking = ranking;
+        this.ranking = rankingg;
     }
 
 
