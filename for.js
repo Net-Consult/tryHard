@@ -7,61 +7,26 @@ const person = {firstName : '', lastName: '', age : 0};
 const firstName= ['tata','toto','snow' ,'blanc','philippe','potter','malefoy','londubat','granger','weasley'];
 const lastName= ['rita','lilio','john','laurent','edouard','harry' ,'drago', 'neville', 'hermione','ron'];
 
-function generatefirstName() {
+ function generateAge() {
+     return Math.floor(Math.random() * 100 + 1)
+ }
+ function generateFirstName() {
+     return firstName[Math.floor(Math.random() * 11)]
+ }
+ function generateLastName() {
+     return lastName[Math.floor(Math.random() * 10)]
+ }
+ const people = [];
+ for (let i = 0; people.length < 100; i++) {
+     const newpeople = {
+         firstName: generateFirstName(),
+         lastName: generateLastName(),
+         age: generateAge()
+     };
+     people.push(newpeople)
+ }
+ const Moy = people.reduce((previousValue, currentValue) => previousValue + currentValue.age / 100, 0);*/
 
-    return firstName [Math.floor(Math.random()*10)]
-}
-
-function generateLastName() {
-    return lastName [Math.floor(Math.random() * 10)]
-
-
-}function generateAge(){
-    return Math.floor(Math.random()*10)
-
-}
-
-
-console.log( generateLastName());
-console.log(generatefirstName());
-console.log(generateage());
-
-const people = [ ];
-for (let i = 1; people.length <100; i++) {
-}
-const personne = {
-    firstName : generatefirstName(),
-    lastName : generateLastName(),
-    age: generateage()
-
-};
-   people.push(person);
-}
-console.log(people);
-
-const sum = people.reduce((accumulator,currentValue)=> {
-    return accumulator+currentValue.age
-
-
-},0)
-
-
-const moyenne=sum/person.length;
-
-console.log (sum);
-
-
-
-
-
-
-
-
-
-
-
-
-*/
 
 
 
