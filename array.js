@@ -191,10 +191,10 @@ const hostels = [
 // le nom des hotels dans leur ordre de tri
 
 /*const hostel=hostels
-
     .sort( (room1, room2) => room2.roomNumbers - room1.roomNumbers)
     .map( value => value.name)
 console.log(hostel);*/
+
 
 
 
