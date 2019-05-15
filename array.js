@@ -191,7 +191,7 @@ let hostels = [
 // le nom des hotels dans leur ordre de tri
 const result = hostels
 
-    .sort( (hostel1, hostel2) => hostel2.roomNumbers - hostel1.roomNumbers)
+   /* .sort( (hostel1, hostel2) => hostel2.roomNumbers - hostel1.roomNumbers)
         .map((hostel)=> (hostel.name));
 
 console.log(result);
@@ -255,7 +255,7 @@ const hostelOcean = hostels.splice(indexOcean, 1);
 hostelOcean.rooms = [];
 hostelOcean.roomNumbers = hostelOcean.rooms.length
 
-console.log(indexOcean);
+console.log(indexOcean);*/
 
 // exercice 6 : créer un objet dont les clés sont le nom des hotels et dont la valeur est un booléen qui indique si l'hotel a une chambre qui s'appelle 'suite marseillaise'
 
