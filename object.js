@@ -197,8 +197,7 @@ const hostels = {
 const result = Object.values(hostels)
     .sort((hostel1, hostel2) => hostel2.roomNumbers-hostel1.roomNumbers)
     .map(hostel=> hostel.name);
-console.log(result);
-
+console.log(result)
 
 // exercice 2 : faire un tableau avec toutes les chambres de tous les hotels, et ne garder que les chambres qui
 // ont plus que ou 3 places et les classer par ordre alphabétique selon le non de la chambre
