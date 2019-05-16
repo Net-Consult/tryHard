@@ -72,8 +72,8 @@ describe("Operators", () => {
 
     expect(result[0]).toBe("Start");
     expect(result[1]).toBe("Condition");
-    expect(result[2]).toBe("Increment");
-    expect(result[3]).toBe("Body");
-    expect(result[4]).toBe("Increment");
+    expect(result[2]).toBe("Body");
+    expect(result[3]).toBe("Increment");
+    expect(result[4]).toBe("Condition");
   });
 });
