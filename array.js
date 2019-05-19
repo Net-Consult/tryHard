@@ -250,10 +250,40 @@ console.log(hostels);
 
 */
 
+
+
+/*
+Exercice 5  : extraire du tableau hostels l'hotel qui a le nom 'hotel ocean' en le supprimant du tableau, et le mettre
+dans une nouvelle variable puis effacer toutes ses chambres et mettre à jour sa valeur room number, puis pusher l'hotel
+modifié dans hostel, puis faire un sort par nom d'hotel puis donner le nouvel index de l'hotel océan
+(faire 2 méthodes : avec indexOf et avec un foreach)
+*/
+
+/*
+const result = hostels.findIndex(hostel => hostel.name === 'hotel ocean');
+
+const [newHostel] = hostels.splice(result, 1);
+
+newHostel.rooms = [];
+
+newHostel.roomNumbers = newHostel.rooms.length;
+
+hostels.push(newHostel);
+
+hostels.sort((hostell1 , hostell2) => hostell2.name > hostell1.name ? -1 : 1);
+
+const hostel = hostels.indexOf(newHostel);
+
+console.log(hostel);
+*/
+
+
+
 /*
 Exercice 6 : créer un objet dont les clés sont le nom des hotels et dont la valeur est un booléen qui indique si
 l'hotel a une chambre qui s'appelle 'suite marseillaise'
 */
+
 /*
 
 const result = {};
@@ -264,19 +294,6 @@ hostels.forEach( hostel => result[hostel.name] = hostel.rooms
 
 console.log(result);
 */
-
-
-/*
-Exercice 5  : extraire du tableau hostels l'hotel qui a le nom 'hotel ocean' en le supprimant du tableau, et le mettre
-dans une nouvelle variable puis effacer toutes ses chambres et mettre à jour sa valeur room number, puis pusher l'hotel
-modifié dans hostel, puis faire un sort par nom d'hotel puis donner le nouvel index de l'hotel océan
-(faire 2 méthodes : avec indexOf et avec un foreach)
-*/
-
-
-
-
-
 
 
 
