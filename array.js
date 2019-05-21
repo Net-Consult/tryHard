@@ -189,7 +189,6 @@ let hostels = [
 
 // exercice 1 : trier les hotels par nombre de chambres (plus grand en 1er) et créer un tableau contenant seulement
 // le nom des hotels dans leur ordre de tri
-
 /*const result = hostels
     .sort((hostel1, hostel2) => hostel2.roomNumbers - hostel1.roomNumbers)
     .map(hostel => hostel.name);
@@ -236,21 +235,23 @@ console.log(hostels);
 // puis effacer toutes ses chambres et mettre à jour sa valeur room number, puis pusher l'hotel modifié dans hostel, puis faire un sort par nom d'hotel
 // puis donner le nouvel index de l'hotel océan (faire 2 méthodes : avec indexOf et avec un foreach)
 
-const index = hostels.findIndex(hostel=> hostel.name === 'hotel ocean');
-const [hostel] = hostel.splice(index, 1);
-hostel.rooms = [];
-hostel.roomNumbers = hostel.rooms.length;
-hostels.push(hostel);
-hostels = hostels.sort((hostel1, hostel2) => hostel1.name < hostel2.name ?-1:1);
-const index2 = hostels.indexOf(hostel);
-console.log(hostel);
+const index = hostels
+    .findIndex(hostel=> hostel.name === 'hotel ocean');
+const [newHostel] = hostels.splice(index, 1);
+newHostel.rooms = [];
+newHostel.roomNumbers = newHostel.rooms.length;
+hostels.push(newHostel);
+hostels.sort((hostel1, hostel2) => hostel1.name < hostel2.name ?-1:1);
+const index2 = hostels.indexOf(newHostel);
+console.log(index2);
 
 // exercice 6 : créer un objet dont les clés sont le nom des hotels et dont la valeur est un booléen qui indique si l'hotel a une chambre qui s'appelle 'suite marseillaise'
 
 const myObj ={};
-hostels.forEach(hostel => myObj[hostel.rooms] = hostel.rooms
+hostels.forEach(hostel => myObj[hostel.name] = hostel.rooms
     .filter(hostel=> hostel.roomName === 'suite marseillaise').length > 0);
 console.log(myObj);*/
+
 
 
 
