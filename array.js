@@ -190,26 +190,88 @@ let hostels = [
 // exercice 1 : trier les hotels par nombre de chambres (plus grand en 1er) et créer un tableau contenant seulement
 // le nom des hotels dans leur ordre de tri
 
+/*
+const hostel = hostels
+    .sort((value1, value2) => value2.roomNumbers - value1.roomNumbers)
+    .map(value => value.name);
+
+console.log(hostels);
+console.log(hostel);
+*/
 
 // exercice 2 : faire un tableau avec toutes les chambres de tous les hotels, et ne garder que les chambres qui
 // ont plus que 3 places ou exactement 3 places et les classer par ordre alphabétique selon le non de la chambre
 
+/*
+const room = hostels.reduce((previousValue, currentValue) => previousValue.concat(currentValue.rooms), [])
+    .filter(value => value.size >= 3)
+    .sort((value1, value2) => value1.roomName < value2.roomName ? -1 : 1);
+
+console.log(hostels);
+console.log(room);
+*/
 
 // exercice 3 : mettre une majuscule à tous les mots qui sont dans l'attribut RoomName
 
+/*
+hostels.map(hostel => {
+    hostel.rooms
+        .map(room => {
+        room.roomName = room.roomName
+            .split(' ')
+            .map(value =>
+                value.charAt(0).toUpperCase() + value.slice(1))
+            .join(' ')
+    })
+});
+
+console.log(hostels);
+*/
 
 // exercice 4 : enlever toutes les chambres qui ont plus de 3 places et changer la valeur de roomNumbers pour qu'elle reflete
 // le nouveau nombre de chambres
 
+/*
+hostels.map(hostel => {
+    hostel.rooms = hostel.rooms
+        .filter(value => value.size <= 3);
+});
+hostels.map(room => {
+    room.roomNumbers = room.rooms.length
+});
+
+console.log(hostels);
+ */
 
 // exercice 5  : extraire du tableau hostels l'hotel qui a le nom 'hotel ocean' en le supprimant du tableau, et le mettre dans une nouvelle variable
 // puis effacer toutes ses chambres et mettre à jour sa valeur room number, puis pusher l'hotel modifié dans hostels, puis faire un sort par nom d'hotel
 // puis donner le nouvel index de l'hotel océan (faire 2 méthodes : avec indexOf et avec un foreach)
 
+/*
+const ocean1 = hostels.findIndex(index => index.name === 'hotel ocean');
+const ocean = hostels[ocean1];
+const [hostelOcean] = hostels.splice(ocean, 1);
+[hostelOcean].map(value => value.rooms = []);
+[hostelOcean].map(value => value.roomNumbers = value.rooms.length);
+hostels.push(hostelOcean);
+hostels.sort((value1, value2) => value1.name < value2.name ? -1 : 1);
+const newIndex = hostels.indexOf(ocean);
+
+
+console.log(hostels);
+console.log(ocean);
+console.log([hostelOcean]);
+console.log(newIndex);
+*/
 
 // exercice 6 : créer un objet dont les clés sont le nom des hotels et dont la valeur est un booléen qui indique si l'hotel a une chambre qui s'appelle 'suite marseillaise'
 
+/*
+const myObject = {};
+hostels.forEach(hostel => {
+    myObject[hostel.name] = hostel.rooms.filter(room => room.roomName === 'suite marseillaise').length > 0
+});
 
-
-
-
+console.log(hostels);
+console.log(myObject);
+*/
