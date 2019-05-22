@@ -190,13 +190,37 @@ let hostels = [
 // exercice 1 : trier les hotels par nombre de chambres (plus grand en 1er) et créer un tableau contenant seulement
 // le nom des hotels dans leur ordre de tri
 
+/*
+const hotel = hostels
+    .sort((value1, value2) => value2.roomNumbers - value1.roomNumbers)
+    .map(value => value.name);
+
+console.log(hostels);
+console.log(hotel);
+*/
+
 
 // exercice 2 : faire un tableau avec toutes les chambres de tous les hotels, et ne garder que les chambres qui
 // ont plus que 3 places ou exactement 3 places et les classer par ordre alphabétique selon le non de la chambre
 
+/*const hostel = hostels
+
+    .reduce((prevValue, currentValue) => prevValue.concat(currentValue.rooms) ,[])
+
+        .filter(value => value.size >= 3)
+            .sort((value1, value2) => value1.roomName < value2.roomName ? -1 : 1);
+
+console.log(hostel);*/
+
 
 // exercice 3 : mettre une majuscule à tous les mots qui sont dans l'attribut RoomName
 
+hostels.map(hostels.charAt(0) + " ")
+
+//let roomName = {rooms.charAt (0).toUpperCase()}
+
+
+console.log(hostels);
 
 // exercice 4 : enlever toutes les chambres qui ont plus de 3 places et changer la valeur de roomNumbers pour qu'elle reflete
 // le nouveau nombre de chambres
