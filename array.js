@@ -215,12 +215,22 @@ console.log(hostel);*/
 
 // exercice 3 : mettre une majuscule à tous les mots qui sont dans l'attribut RoomName
 
-hostels.map(hostels.charAt(0) + " ")
+const hostel = hostels
+    hostels.map( => {value1.roomName =  value2.roomName.split(' ')
+            .map(word => word.charAt(0)
+             .toUpperCase()+word.slice(1)
+                 .join(' '))
+}
+
+    );
+
+
+console.log(hostel)
 
 //let roomName = {rooms.charAt (0).toUpperCase()}
 
 
-console.log(hostels);
+console.log(hostel);
 
 // exercice 4 : enlever toutes les chambres qui ont plus de 3 places et changer la valeur de roomNumbers pour qu'elle reflete
 // le nouveau nombre de chambres
