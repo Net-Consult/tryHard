@@ -190,21 +190,22 @@ let hostels = [
 // exercice 1 : trier les hotels par nombre de chambres (plus grand en 1er) et créer un tableau contenant seulement
 // le nom des hotels dans leur ordre de tri
 /*const hostel = hostels
-
     .sort((value1, value2) => value2.roomNumbers - value1.roomNumbers)
-    .map(value => value.name);
+    .map(value =>  value.name)
 
-console.log(hostel);
-console.log(hostels);*/
+console.log(hostels)
+console.log(hostel)*/
 
 // exercice 2 : faire un tableau avec toutes les chambres de tous les hotels, et ne garder que les chambres qui
 // ont plus que 3 places ou exactement 3 places et les classer par ordre alphabétique selon le non de la chambre
 
 /*const hostel = hostels
+.reduce((prevValue, currentValue) => prevValue.concat (currentValue.rooms), [])
+    .filter(value => value.size >=3)
+    .sort((value1, value2) => value1.roomName < value2.roomName ? -1 : 1)
 
-    .reduce((prevValue, currentValue)=> prevValue.concat(currentValue.rooms), [])
-    .filter(value => value.size >= 3)
-    .sort((value1, value2) => value1.roomName < value2.roomName ? -1 : 1);
+
+
 
 
 console.log(hostel);*/
@@ -228,6 +229,7 @@ console.log(hostels);*/
 
 // exercice 4 : enlever toutes les chambres qui ont plus de 3 places et changer la valeur de roomNumbers pour qu'elle reflete
 // le nouveau nombre de chambres
+
 /*hostels.map(value => value.rooms = value.rooms
     .filter(value => value.size <= 3
     )
@@ -241,7 +243,7 @@ console.log(hostels);*/
 // puis donner le nouvel index de l'hotel océan (faire 2 méthodes : avec indexOf et avec un foreach)
 
 
-const hostel = hostels.findIndex(hostel => hostel.name === 'hotel ocean');
+/*const hostel = hostels.findIndex(hostel => hostel.name === 'hotel ocean');
 const hostel1 = hostels[hostel];
 const [hotelOcean] = hostels.splice(hostel, 1);
 [hotelOcean].map(value => value.rooms = []);
@@ -256,7 +258,7 @@ console.log(hostel);
 console.log(hostel1);
 console.log(hostels);
 console.log(hotelOcean);
-console.log(newIndex);
+console.log(newIndex);*/
 
 
 // exercice 6 : créer un objet dont les clés sont le nom des hotels et dont la valeur est un booléen qui indique si l'hotel a une chambre qui s'appelle 'suite marseillaise'
