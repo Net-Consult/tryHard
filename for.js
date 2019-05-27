@@ -1,10 +1,15 @@
 // exercice 1 : générer un array avec 100 objets avec la forme ci dessous, dont les données sont toutes aléatoires
 const person = {firstName: '', lastName: '', age: 0};
 // bonus : calculer la moyenne des âges de personnes en utilisant un reduce
+for (const i = 0 )
+
 
 
 // exercice 2 : générer un tableau contenant des nombres pairs consécutifs, le premier nombre du tableau doit être 4,
 // on doit arreter de remplir le tableau quand il y a 20 nombres pairs dans le tableau
+
+
+
 
 
 // exercice 3 : Écrire un programme qui affiche les nombres de 1 à 199 avec un console log.
