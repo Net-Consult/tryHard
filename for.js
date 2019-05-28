@@ -2,15 +2,15 @@
 const person = {firstName: '', lastName: '', age: 0};
 // bonus : calculer la moyenne des âges de personnes en utilisant un reduce
 
-
+reduce((acc, current) => accPerson.concat(current.person1), []);
 for( const i = 0; person, length<100; i=i+1){
     const   person1 ={firstName, lastName, age
 
-        firstName : generate firstName (),
-        lastName : generate lastName(),
-        age : generate age (),
+        firstName: generate firstName ()
+        lastName: generate lastName()
+        age: generate age ()
     }
-    reduce((acc, current) => accPerson.concat(current.person1), []);
+
 
  person.push(person1);
 }
