@@ -189,7 +189,7 @@ const hostels = {
 };
 
 
-/// faire tous les exos dans un premier temps avec des boucles for puis avec Object.keys ou Object.values
+/// faire tous les exos suivants en utilisant Object.keys ou Object.values
 
 // exercice 1 : trier les hotels par nombre de chambres (plus grand en 1er) et créer un tableau contenant seulement
 // le nom des hotels dans leur ordre de tri
@@ -209,3 +209,30 @@ const hostels = {
 // puis donner le nouvel index de l'hotel océan (faire 2 méthodes : avec indexOf et avec un foreach)
 
 // exercice 6 : créer un objet dont les clés sont le nom des hotels et dont la valeur est un booléen qui indique si l'hotel a une chambre qui s'appelle 'suite marseillaise'
+
+
+
+/// Faire les exercices suivants :
+
+const lessons = {
+    lesson1: true,
+    lesson11: false,
+    lesson2: true,
+    lesson15: false,
+    lesson3: true,
+    lesson4: true,
+    lesson13: false,
+    lesson6: false,
+    lesson12: false,
+    lesson7: false,
+    lesson8: false,
+    lesson9: false,
+    lesson10: false,
+    lesson5: false,
+    lesson14: false,
+};
+
+
+// exercice 1 : changer cet objet pour que ses clées soient classées dans l'ordre alphabétiques
+
+// exercice 2 : en gardant l'objet trié, faites une fonction qui donne le numéro de la première clé qui a la valeur false sous la forme {key: 4, value: false}
