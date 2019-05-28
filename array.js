@@ -208,7 +208,7 @@ console.log(hostel);*/
 
 // exercice 3 : mettre une majuscule à tous les mots qui sont dans l'attribut RoomName
 
-hostels.map(value => {
+/*hostels.map(value => {
     value.rooms
         .map(value1 => {
             value1.roomName = value1.roomName
@@ -220,7 +220,7 @@ hostels.map(value => {
         })
 })
 
-console.log(hostels)
+console.log(hostels)*/
 
 
 // exercice 4 : enlever toutes les chambres qui ont plus de 3 places et changer la valeur de roomNumbers pour qu'elle reflete
