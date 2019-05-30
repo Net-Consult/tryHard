@@ -2,10 +2,10 @@
 const person = {firstName: '', lastName: '', age: 0};
 // bonus : calculer la moyenne des âges de personnes en utilisant un reduce
 
-const firstname = ["Loïc", "Fabrice", "Silivie", "Laurent", "Farid", "Lisa", "Sebastien", "Mehdi", "Brice", "Suzi", "Meriam", "Sofia", "Maurice", "Bella", "Harry", " Hermonie", "Herouane", "Slimane", "Adan", "Marie"];
+/*const firstname = ["Loïc", "Fabrice", "Silivie", "Laurent", "Farid", "Lisa", "Sebastien", "Mehdi", "Brice", "Suzi", "Meriam", "Sofia", "Maurice", "Bella", "Harry", " Hermonie", "Herouane", "Slimane", "Adan", "Marie"];
 const lastname = ["Dupont", "Bernard", "Thomas", "Rousseau", "Taibet", "Leroy", "Girard", "Legouloum", "Muller", "Lefevre", "Guerin", "Boyer", "Lambert", "Vincent", "Duval", "Barbier", "Martinez", "Arnaud", "Lemaire", "Roche",];
 
-function generateage() {
+/*function generateage() {
     return Math.floor(Math.random() * 100 + 1)
 }
 
@@ -30,13 +30,13 @@ for (let i = 0; people.length < 100; i++) {
 const people1 = people.reduce((accumulateur, valeurCourante) => accumulateur + valeurCourante.age / 100, 0);
 
 /*console.log(people);*/
-console.log(people1);
+/*console.log(people1);*/
 
 
 // exercice 2 : générer un tableau contenant des nombres pairs consécutifs, le premier nombre du tableau doit être 4,
 // on doit arreter de remplir le tableau quand il y a 20 nombres pairs dans le tableau
 
-const tableau = [];
+/*const tableau = [];
 for (let i = 4; tableau.length < 20; i += 2) {
     tableau.push(i)
 }
@@ -60,6 +60,6 @@ for (let i = 1; i < 200; i++) {
     } else {
         console.log(i);
     }
-}
+}*/
 
 
