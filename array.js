@@ -239,29 +239,30 @@ console.log(hostels);*/
 // puis effacer toutes ses chambres et mettre à jour sa valeur room number, puis pusher l'hotel modifié dans hostels, puis faire un sort par nom d'hotel
 // puis donner le nouvel index de l'hotel océan (faire 2 méthodes : avec indexOf et avec un foreach)
 
-/*const hostel = hostels.findIndex(hostel => hostel.name === 'hostel ocean');
-const hostel1 = hostels [hostel1];
-const [hostelOcean] = hostels.splice(hostel, 1)
-[hostelOcean].map(value => value.rom = []);
-[hostelOcean].map(value => value.roomNumbers = value.rooms.length)
-hostels.push(hostelOcean);
+/*const hostel = hostels.findIndex(hostel => hostel.name === 'hotel ocean');
+const hostel1 = hostels[hostel];
+const [hostel2] = hostels.splice(hostel, 1);
+[hostel2].map(value => value.rooms = []);
+[hostel2].map(value => value.roomNumbers = value.rooms.length);
+hostels.push(hostel2);
+hostels.sort ((value1, value2) => value1.name < value2.name ? -1 : 1);
+const newIndex = hostels.indexOf(hostel1);
 
 
-
-console.log(hostels);
-
+console.log(hostel);
 console.log(hostel1);
+console.log(hostel2);
 console.log(hostels);
-console.log(hotelOcean);
-console.log(newIndex);
-console.log(hostel2);*/
+console.log(newIndex);*/
+
+
 
 
 // exercice 6 : créer un objet dont les clés sont le nom des hotels et dont la valeur est un booléen qui indique si l'hotel a une chambre qui s'appelle 'suite marseillaise'
 
 /*const myObject = {};
 hostels.forEach(value => {
-    myObject [value.name] = value.rooms.filter(value => value.roomName === 'suite marseillaise') .length > 0
+    myObject [value.name] = value.rooms.filter(value => value.roomName === 'suite marseillaise').length > 0
 });
 console.log(myObject);*/
 
