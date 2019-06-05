@@ -192,7 +192,7 @@ let hostels = [
 
 /*const hostel = hostels
     .sort((value1, value2)=> value2.roomNumbers - value1.roomNumbers)
-    .filter(value => value.name);
+    .map(value => value.name);
 console.log(hostel);
 console.log(hostels);*/
 

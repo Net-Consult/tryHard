@@ -23,7 +23,7 @@ describe("Variables", () => {
   it("Variables - 4", () => {
     var i, j;
 
-    for (var i = 0; i < 1; i++) {}
+    for ( i = 0; i < 1; i++) {}
     expect(i).toBe(1);
 
     for (let j = 0; j < 1; j++) {}
