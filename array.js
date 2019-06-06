@@ -239,6 +239,8 @@ console.log(hostels);*/
 // puis effacer toutes ses chambres et mettre à jour sa valeur room number, puis pusher l'hotel modifié dans hostels, puis faire un sort par nom d'hotel
 // puis donner le nouvel index de l'hotel océan (faire 2 méthodes : avec indexOf et avec un foreach)
 
+
+
 /*const hostel = hostels.findIndex(hostel => hostel.name === 'hotel ocean');
 const hostel1 = hostels[hostel];
 const [hostel2] = hostels.splice(hostel, 1);
