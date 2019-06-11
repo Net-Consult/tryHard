@@ -231,7 +231,7 @@ console.log(hostels);*/
     .filter(value => value.size <= 3
     )
 )
-    .map(value => value.roomNumbers = value.rooms);
+    hostels.map(value => value.roomNumbers = value.rooms.length);
 console.log(hostels);*/
 
 
@@ -267,4 +267,3 @@ hostels.forEach(value => {
     myObject [value.name] = value.rooms.filter(value => value.roomName === 'suite marseillaise').length > 0
 });
 console.log(myObject);*/
-

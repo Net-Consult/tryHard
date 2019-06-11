@@ -11,8 +11,6 @@ const lastname = ["Dupont", "Bernard", "Thomas", "Rousseau", "Taibet", "Leroy", 
 
 function generatefirstName() {
     return firstname[Math.floor(Math.random() * 20)]
-}
-
 function generatelastname() {
     return lastname[Math.floor(Math.random() * 20)]
 }
