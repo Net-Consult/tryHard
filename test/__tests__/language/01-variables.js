@@ -16,7 +16,7 @@ describe("Variables", () => {
   });
 
   it("Variables - 3", () => {
-    expect(company).toBe(undefined);
+    expect(company).toBe();
     var company = "sfeir";
   });
 
@@ -24,9 +24,9 @@ describe("Variables", () => {
     var i, j;
 
     for ( i = 0; i < 1; i++) {}
-    expect(i).toBe(1);
+    expect(i).toBe();
 
     for (let j = 0; j < 1; j++) {}
-    expect(j).toBe(undefined);
+    expect(j).toBe();
   });
 });
