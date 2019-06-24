@@ -7,6 +7,10 @@ const lastname = ["Dupont", "Bernard", "Thomas", "Rousseau", "Taibet", "Leroy", 
 
 /*function generateage() {
     return Math.floor(Math.random() * 100 + 1)
+} */
+
+function generateage(){
+return Math.floor(Math.random() * 100 + 1)
 }
 
 function generatefirstName() {

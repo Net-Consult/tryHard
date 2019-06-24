@@ -5,6 +5,7 @@
     "test": "jest --watch"
   },
   "dependencies": {
-    "jest": "^23.5.0"
+    "jest": "^23.5.0",
+    "test": "^0.6.0"
   }
 }
